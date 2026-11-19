@@ -1,0 +1,74 @@
+:root {
+  --accentGr: rgb(128, 156, 0);
+  --primary: rgb(25, 25, 25);
+  --accentPu: rgb(99, 0, 156);
+  --buttonHover: rgb(66, 0, 105);
+  --buttonText: rgb(255, 255, 255);
+  --neutrals: rgb(199, 199, 199);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--accentPu);
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--buttonHover);
+}
+
+a {
+  color: var(--accentGr);
+}
+a:hover {
+  color: var(--accentPu);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--neutrals);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--accentGr);
+}
+
+nav a.active::after {
+  content: "";
+  position: relative;
+
+  left: -26px;
+  bottom: -6px;
+
+  width: 0;
+  height: 0;
+
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 6px solid var(--accentGr);
+}
