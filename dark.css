@@ -43,11 +43,19 @@ nav ul {
   gap: 30px;
 }
 
+a {
+  color: var(--accentGr);
+}
+
 nav a {
   color: white;
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
+}
+
+a:hover {
+  color: var(--accentPu);
 }
 
 nav a:hover {
@@ -67,11 +75,4 @@ nav a.active::after {
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-bottom: 6px solid var(--accentGr);
-}
-
-a {
-  color: var(--accentGr);
-}
-a:hover {
-  color: var(--accentPu);
 }
