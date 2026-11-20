@@ -26,13 +26,6 @@ button:hover {
   background-color: var(--buttonHover);
 }
 
-a {
-  color: var(--accentGr);
-}
-a:hover {
-  color: var(--accentPu);
-}
-
 nav {
   display: flex;
   align-items: center;
@@ -47,11 +40,19 @@ nav ul {
   gap: 30px;
 }
 
+a {
+  color: var(--accentGr);
+}
+
 nav a {
   color: black;
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
+}
+
+a:hover {
+  color: var(--accentPu);
 }
 
 nav a:hover {
